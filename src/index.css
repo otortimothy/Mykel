@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animation styles */
+@keyframes roll-up {
+  0% {
+    background-position: bottom;
+    color: black;
+  }
+  100% {
+    background-position: bottom;
+    color: white;
+  }
+}
+
+.card-hover:hover {
+  animation: roll-up 0.5s forwards;
+  background-color: #3b82f6; /* Tailwind's blue-800 color */
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+  color: black;
+}
+
+.button:hover{
+  color: #3b82f6;
+}
+
+.button-selected {
+  color: #3b82f6;
+}
+/* .hover-rolling-color{
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s;
+}
+
+.hover-rolling-color::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4ade80;
+  transition: top 0.5s;
+  z-index: 0;
+}
+
+.hover-rolling-color:hover::before{
+  top: 0;
+}
+
+.hover-rolling-color > * {
+  position: relative;
+  z-index: 1;
+} */
