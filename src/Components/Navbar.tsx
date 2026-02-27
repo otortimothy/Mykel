@@ -17,7 +17,10 @@ const Navbar = () => {
               <button className="transition-all duration-700 bg-[#0E5AF2] text-white p-2 w-[129px] rounded-md hover:text-[#0E5AF2] hover:bg-white hover:border hover:border-[#0E5AF2]">Get A Quote</button>
           </div> */}
           <div className=" flex justify-between p-5 items-center">
-              <img src="/public/Images/Logo.png" className=" align-middle"/>
+              <img 
+              src="/public/Images/Logo.png" 
+              alt="Logo"
+              className=" align-middle"/>
                 <nav className="flex space-x-[30px]">
                   <NavLink
                     to="/"
